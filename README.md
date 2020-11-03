@@ -33,7 +33,7 @@ Chatting android application developed using **Java** & **Google Firebase** & **
 # Screenshots
 
 <img title="welcome page" src="./screenshots/welcome page.gif" width = 300 height = 400>
-<img title="Sign up page" src="./screenshots/signup page.png width = 300 height = 400"
+<img title="Sign up page" src="./screenshots/signup page.png" width = 300 height = 400>
 <img title="Sing in page" src="./screenshots/signin page.png" width = 300 height = 400>
 <img title="chats page" src="./screenshots/chats page.png" width = 300 height = 400>
 <img title="friends page" src="./screenshots/friends page.png" width = 300 height = 400>
