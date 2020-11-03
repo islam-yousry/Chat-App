@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Chat App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Chats">Chats</string>
+    <string name="People">People</string>
+    <string name="last_message_isPhoto">sent a photo</string>
+    <string name="selfProfile_activity_title">Me</string>
+    <string name="requests">Requests</string>
+    <string name="pick_a_photo">pick a photo</string>
+    <string name="type_message_here">type message here</string>
+    <string name="send">send</string>
+    <string name="logout">logout</string>
+    <string name="block">block</string>
+    <string name="image">image</string>
+    <string name="search">Search</string>
+    <string name="resend_verification_email">Resend Verification Email?</string>
+    <string name="forgotten_password">Forgotten password ?</string>
+    <string name="sign_in">Sign in</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="back">back</string>
+    <string name="create_a_new_account">Create a new account</string>
+    <string name="username">Username</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="application_welcome">Welcome
+        to
+        ChatApp</string>
+    <string name="enter_your_email">Enter your Email</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="sign"><![CDATA[>]]></string>
+    <string name="accept">accept</string>
+    <string name="chats">Chats</string>
+    <string name="people">People</string>
+    <string name="add_person">add person</string>
+    <string name="keep_me_signed_in">keep me signed in</string>
+    <string name="blocked_list">Blocked List</string>
+    <string name="settings">Settings</string>
+    <string name="enter_your_password_to_save_changes">Enter your password to save the changes</string>
+    <string name="save">Save</string>
+    <string name="share_chat_app">Share Chat App</string>
+</resources>

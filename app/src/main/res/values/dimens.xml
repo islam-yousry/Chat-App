@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="large_36dp">36dp</dimen>
+    <dimen name="small_10dp">10dp</dimen>
+    <dimen name="view_width_200">200dp</dimen>
+    <dimen name="medium_18dp">18dp</dimen>
+    <dimen name="view_width_300">300dp</dimen>
+    <dimen name="view_image_100">100dp</dimen>
+</resources>

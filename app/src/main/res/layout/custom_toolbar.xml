@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/drawable_green_gradient"
+    app:popupTheme="@style/MenuStyle"
+    app:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/toolbar_image_view"
+        android:layout_width="@dimen/large_36dp"
+        android:layout_height="@dimen/large_36dp"
+        android:src="@drawable/ic_person"
+        app:civ_circle_background_color="@android:color/black" />
+
+    <TextView
+        android:id="@+id/toolbar_title_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/large_36dp"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        tools:text="Chats" />
+
+
+</androidx.appcompat.widget.Toolbar>

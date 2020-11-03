@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".View.MessageActivity"
+    android:background="@drawable/drawable_green_gradient">
+
+
+    <include
+        layout="@layout/custom_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/messages_recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/linear_layout"
+        android:layout_below="@id/toolbar"
+        android:divider="@android:color/transparent"
+        android:padding="10dp"
+        android:transcriptMode="alwaysScroll"
+        tools:listitem="@layout/message_item_left" />
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/small_10dp"
+        android:background="@drawable/drawable_green_gradient"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/photo_picker_button"
+            android:layout_width="@dimen/large_36dp"
+            android:layout_height="@dimen/large_36dp"
+            android:layout_marginEnd="2dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_gallery"
+            android:contentDescription="@string/pick_a_photo"
+            />
+
+        <EditText
+            android:id="@+id/message_edit_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/input_background"
+            android:backgroundTint="@android:color/white"
+            android:hint="@string/type_message_here"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:maxLines="3"
+            android:padding="@dimen/small_10dp" />
+
+        <ImageButton
+            android:id="@+id/send_button"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/large_36dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/small_10dp"
+            android:background="@drawable/ic_send"
+            android:clickable="false"
+            android:contentDescription="@string/send" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible" />
+
+</RelativeLayout>

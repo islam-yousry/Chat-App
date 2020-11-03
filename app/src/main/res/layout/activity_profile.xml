@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profile_activity_view_group"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/drawable_green_gradient"
+    android:orientation="vertical"
+    tools:context=".View.ProfileActivity"
+    >
+
+
+    <include layout="@layout/custom_toolbar" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image_view"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_person"
+            app:civ_circle_background_color="@android:color/black" />
+
+        <TextView
+            android:id="@+id/profile_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:layout_gravity="center_horizontal"
+            android:textAppearance="@android:style/TextAppearance.Material.Title"
+            tools:text="user name" />
+
+
+        <TextView
+            android:id="@+id/profile_user_email_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginVertical="5dp"
+            android:textAppearance="@android:style/TextAppearance.Material.Title"
+            tools:text="email address" />
+
+        <TextView
+            android:id="@+id/profile_phone_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginVertical="5dp"
+            android:textAppearance="@android:style/TextAppearance.Material.Title"
+            tools:text="Phone" />
+
+        <com.google.android.material.internal.BaselineLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="@dimen/small_10dp"
+            android:background="@android:color/black" />
+
+        <LinearLayout
+            android:id="@+id/self_user_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/settings_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/ic_settings"
+                    android:contentDescription="@string/settings" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/settings"
+                    android:textAppearance="@android:style/TextAppearance.Material.Title" />
+
+            </LinearLayout>
+            <com.google.android.material.internal.BaselineLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="1dp"
+                android:background="@color/gray_background" />
+
+
+            <LinearLayout
+                android:id="@+id/share_app_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/ic_share"
+                    android:contentDescription="@string/share_chat_app" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/share_chat_app"
+                    android:textAppearance="@android:style/TextAppearance.Material.Title" />
+
+            </LinearLayout>
+
+            <com.google.android.material.internal.BaselineLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="1dp"
+                android:background="@color/gray_background" />
+
+
+            <LinearLayout
+                android:id="@+id/blocked_list_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/ic_block"
+                    android:contentDescription="@string/blocked_list" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/blocked_list"
+                    android:textAppearance="@android:style/TextAppearance.Material.Title" />
+
+            </LinearLayout>
+
+            <com.google.android.material.internal.BaselineLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="1dp"
+                android:background="@color/gray_background" />
+
+
+            <LinearLayout
+                android:id="@+id/logout_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:contentDescription="@string/logout"
+                    android:src="@drawable/logout" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/logout"
+                    android:textAppearance="@android:style/TextAppearance.Material.Title" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/other_user_relative_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/medium_18dp"
+            android:visibility="gone">
+
+
+            <LinearLayout
+                android:id="@+id/block_linear_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/medium_18dp"
+                android:clickable="true"
+                android:orientation="vertical"
+                android:focusable="true">
+
+                <ImageButton
+                    android:id="@+id/block_image_button"
+                    android:layout_width="@dimen/medium_18dp"
+                    android:layout_height="@dimen/medium_18dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_block"
+                    android:contentDescription="@string/block" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/block" />
+            </LinearLayout>
+
+            <!--            this right layout can have four values
+                            (addFriend,removeFriend,acceptRequest,cancelRequest)-->
+            <LinearLayout
+                android:id="@+id/right_linear_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/medium_18dp"
+                android:orientation="vertical"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageButton
+                    android:id="@+id/right_image_button"
+                    android:layout_width="@dimen/medium_18dp"
+                    android:layout_height="@dimen/medium_18dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/image"
+                    tools:background="@drawable/ic_add_person" />
+
+                <TextView
+                    android:id="@+id/right_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    tools:text="add" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

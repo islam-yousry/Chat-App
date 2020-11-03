@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/small_10dp">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/chat_item_profile_image"
+        android:layout_width="@dimen/large_36dp"
+        android:layout_height="@dimen/large_36dp"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/ic_person"
+        app:civ_circle_background_color="@android:color/black" />
+
+    <TextView
+        android:id="@+id/chat_item_profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/small_10dp"
+        android:layout_toEndOf="@id/chat_item_profile_image"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+        tools:text="Islam Yousry" />
+
+    <TextView
+        android:id="@+id/chat_item_last_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chat_item_profile_name"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/chat_item_profile_image"
+        android:maxLength="40"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+        tools:text="last message" />
+
+    <TextView
+        android:id="@+id/chat_item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chat_item_profile_name"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@id/chat_item_last_message"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+        tools:text="3:34 p.m." />
+
+
+</RelativeLayout>

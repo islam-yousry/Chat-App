@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="change color theme">
+        <menu>
+            <item android:title="green"
+                android:id="@+id/green_menu_item"/>
+
+            <item android:title="amber"
+                android:id="@+id/amber_menu_item"/>
+
+
+            <item android:title="red"
+                android:id="@+id/red_menu_item"/>
+
+            <item android:title="purple"
+                android:id="@+id/purple_menu_item"/>
+
+        </menu>
+
+    </item>
+
+</menu>

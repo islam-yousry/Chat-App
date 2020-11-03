@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/drawable_green_gradient"
+    android:orientation="vertical"
+    tools:context=".View.SettingsActivity">
+
+    <include layout="@layout/custom_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/small_10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image_view"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_person"
+            app:civ_circle_background_color="@android:color/black" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/large_36dp"
+            android:text="@string/username"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/username_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/medium_18dp"
+            android:layout_marginBottom="@dimen/small_10dp"
+            android:background="@drawable/input_background"
+            android:inputType="textPersonName"
+            android:padding="@dimen/small_10dp"
+            android:textAppearance="@android:style/TextAppearance.Material"
+            android:textColorHint="@android:color/white"
+            tools:hint="@string/username" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/large_36dp"
+            android:text="Phone Number"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/phone_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/medium_18dp"
+            android:layout_marginBottom="@dimen/small_10dp"
+            android:background="@drawable/input_background"
+            android:hint="Phone Number"
+            android:inputType="number"
+            android:padding="@dimen/small_10dp"
+            android:textAppearance="@android:style/TextAppearance.Material"
+            android:textColorHint="@android:color/white" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/large_36dp"
+            android:text="@string/enter_your_password_to_save_changes"
+            android:textStyle="bold" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/medium_18dp"
+            app:hintEnabled="false"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password_text_input_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_background"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:padding="@dimen/small_10dp"
+                android:textAppearance="@android:style/TextAppearance.Material"
+                android:textColorHint="@android:color/white" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/forgotten_password_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/large_36dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="@string/forgotten_password"
+            android:textColor="@android:color/holo_red_dark" />
+
+        <Button
+            android:id="@+id/settings_save_changes_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="@dimen/medium_18dp"
+            android:background="@android:color/black"
+            android:text="@string/save"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
